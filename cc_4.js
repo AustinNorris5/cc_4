@@ -31,3 +31,15 @@ while (stock > 0) {
 }; //Use a while loop to decrease stock until it reaches zero
 
 console.log("Stock is Zero"); //Log each decrement to the console using a template literal
+
+//Task 4 - Customer Survey
+
+let responses = 0; //Declare a variable responses with an initial value of zero
+
+do {
+    console.log(`Collected Responses: ${responses}`);
+    responses++;
+} while (responses < 3); //Use a do...while loop to collect responses, simulating user input with responses++ until it reaches 3
+
+console.log(); //Log each response count to the console using a template literal
+
