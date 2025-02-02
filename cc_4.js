@@ -82,9 +82,7 @@ let amount = 100;
 const taxRate = 0.1;
 const tax = calculateTax(amount, taxRate); //
 
-console.log("Amount:", amount)
-console.log("Tax Rate:", taxRate)
-console.log("Calculated Tax:", tax) //Log the result to the console using a template literal
+console.log(`A ${taxRate * 100}% tax rate on $${amount} is $${amount * taxRate}`) //Log the result to the console using a template literal
 
 //Task 9
 
