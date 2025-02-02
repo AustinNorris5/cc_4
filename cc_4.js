@@ -85,3 +85,18 @@ const tax = calculateTax(amount, taxRate); //
 console.log("Amount:", amount)
 console.log("Tax Rate:", taxRate)
 console.log("Calculated Tax:", tax) //Log the result to the console using a template literal
+
+//Task 9
+
+const applyDiscount = function(price, discountPercent) {
+    const discount = price * (discountPercent / 100);
+    const discountPrice = price - discount;
+    return discountPrice;
+};
+
+let price = 500;
+let discountPercent = 20;
+
+const discountPrice = applyDiscount(price, discountPercent);
+
+console.log(`After a ${discountPercent}% discount the price is $${discountPrice}`);
