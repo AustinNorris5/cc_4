@@ -55,4 +55,12 @@ for (const key in employee) {
     console.log(`${key}: ${employee[key]}`);
 }; //Use a for...in loop to iterate through the object properties and log it to the console
 
+//Task 6 - Product Listings
+
+let products = ["Laptop", "Mouse", "Keyboard"]; //Declare an array products with at least three product names
+
+for (const product of products) {
+    console.log(`Product: ${product}`);
+} //Use a for...of loop to display each product
+
 
