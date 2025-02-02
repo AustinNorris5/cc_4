@@ -70,3 +70,18 @@ let orders = [101, 102, 103]; //Declare an array orders with at least three orde
 orders.forEach(orderId => {
     console.log(`Order ID: ${orderId}`);
 }); //Use the forEach() method to log each order ID to the console using a template literal
+
+//Task 8 - Tax Calculation
+
+function calculateTax(amount, taxRate) {
+    const tax = amount * taxRate; //Write a function calculateTax that takes an amount and tax rate
+    return tax; //Return the calculated tax.
+};
+
+let amount = 100;
+const taxRate = 0.1;
+const tax = calculateTax(amount, taxRate); //
+
+console.log("Amount:", amount)
+console.log("Tax Rate:", taxRate)
+console.log("Calculated Tax:", tax) //Log the result to the console using a template literal
