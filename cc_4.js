@@ -10,3 +10,13 @@ if (purchaseAmount > 100) {
 
 console.log(`Final amount after discount: $${finalAmount}`); //Log the final amount to the console using a template literal
 
+//Task 2 - Sales Report
+
+let sales = [120, 85, 200, 150, 90];
+let totalSales = 0 //Declare an array sales with at least five sales figures
+
+for (let i = 0; i < sales.length; i++) {
+    totalSales += sales[i];
+}; //Use a for loop to calculate the total sales
+
+console.log(`Total sales: $${totalSales}`); //Log the total sales to the console using a template literal
