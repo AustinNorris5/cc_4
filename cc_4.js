@@ -61,6 +61,12 @@ let products = ["Laptop", "Mouse", "Keyboard"]; //Declare an array products with
 
 for (const product of products) {
     console.log(`Product: ${product}`);
-} //Use a for...of loop to display each product
+} //Use a for...of loop to display each product and log it to the console
 
+//Task 7 - Order Processing
 
+let orders = [101, 102, 103]; //Declare an array orders with at least three order IDs
+
+orders.forEach(orderId => {
+    console.log(`Order ID: ${orderId}`);
+}); //Use the forEach() method to log each order ID to the console using a template literal
