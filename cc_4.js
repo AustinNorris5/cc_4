@@ -1,4 +1,4 @@
-//Task 1: Customer Discounts
+//Task 1 - Customer Discounts
 
 let purchaseAmount = 150; //Declare a variable purchaseAmount with a value
 let finalAmount = purchaseAmount;
@@ -42,4 +42,17 @@ do {
 } while (responses < 3); //Use a do...while loop to collect responses, simulating user input with responses++ until it reaches 3
 
 console.log(); //Log each response count to the console using a template literal
+
+//Task 5 - Employee
+
+let employee = {
+    name: "Alice",
+    position: "Manager",
+    salary: 7500
+}; //Declare an object employee with properties: { name: "Alice", position: "Manager", salary: 75000 }
+
+for (const key in employee) {
+    console.log(`${key}: ${employee[key]}`);
+}; //Use a for...in loop to iterate through the object properties and log it to the console
+
 
