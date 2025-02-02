@@ -19,4 +19,15 @@ for (let i = 0; i < sales.length; i++) {
     totalSales += sales[i];
 }; //Use a for loop to calculate the total sales
 
-console.log(`Total sales: $${totalSales}`); //Log the total sales to the console using a template literal
+console.log(`Total Sales: $${totalSales}`); //Log the total sales to the console using a template literal
+
+//Task 3 - Inventory Depletion
+
+let stock = 10; //Declare a variable stock with an initial value of 10
+
+while (stock > 0) {
+    console.log(`Stock Remaining: ${stock}`);
+    stock--;
+}; //Use a while loop to decrease stock until it reaches zero
+
+console.log("Stock is Zero"); //Log each decrement to the console using a template literal
