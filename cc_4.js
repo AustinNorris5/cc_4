@@ -80,21 +80,32 @@ function calculateTax(amount, taxRate) {
 
 let amount = 100;
 const taxRate = 0.1;
-const tax = calculateTax(amount, taxRate); //
+const tax = calculateTax(amount, taxRate);
 
 console.log(`A ${taxRate * 100}% tax rate on $${amount} is $${amount * taxRate}`) //Log the result to the console using a template literal
 
 //Task 9
 
-const applyDiscount = function(price, discountPercent) {
+const applyDiscount = function(price, discountPercent) { //Declare a function expression applyDiscount that takes a price and discount percentage
     const discount = price * (discountPercent / 100);
     const discountPrice = price - discount;
-    return discountPrice;
+    return discountPrice; //Return the discounted price
 };
 
 let price = 500;
 let discountPercent = 20;
 
-const discountPrice = applyDiscount(price, discountPercent);
+const discountPrice = applyDiscount(price, discountPercent); //Log the result to the console using a template literal
 
 console.log(`After a ${discountPercent}% discount the price is $${discountPrice}`);
+
+//Task 10 - Loyalty Points
+
+const calculatePoints = (amount) => Math.floor(amount / 10); //Write an arrow function calculatePoints that takes a purchase amount and returns points earned
+
+let totalSpent = 60;
+
+const loyaltyPoints = calculatePoints(totalSpent);
+
+console.log(`For a $${totalSpent} purchase you get ${loyaltyPoints} loyalty points`) //Log the result to the console using a template literal
+
